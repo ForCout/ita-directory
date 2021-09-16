@@ -7,20 +7,23 @@ export const Container = styled.div`
 	-webkit-border-radius: 10px;
 	box-shadow: 0px 3px 6px #00000029;
 	overflow: hidden;
-	max-width: 22rem;
-	height: 22.7rem;
+	max-width: 40%;
+	height: 60%;
 	margin: 1rem;
-`;
 
+	@media only screen and (max-width: 769px) {
+		max-width: 90%;
+	}
+`;
 export const Form = styled.form`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2.19rem;
+	padding: 2rem;
 
 	& > .classInput {
-		margin-bottom: 1.69rem;
+		margin-bottom: 2rem;
 		position: relative;
 
 		& > label {
@@ -47,7 +50,7 @@ export const Label = styled.label`
 
 export const StyledError = styled.div`
 	color: ${Colors.redColor};
-	font-weight: 800;
+	font-weight: 800px;
 	margin: 0 0 40px 0;
 `;
 
