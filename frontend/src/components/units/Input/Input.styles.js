@@ -35,7 +35,6 @@ export const StyledIconInput = styled.div.attrs({
 	flex-wrap: nowrap;
 	border-radius: 5px;
 	border: 1px solid #dddddd;
-	width: 18.6rem;
 	height: 2.6rem;
 	padding: 5px;*/
 	&:focus-within {
@@ -62,18 +61,14 @@ export const StyledIconInput = styled.div.attrs({
 	}
 `;
 
-export const StyledInput = styled.input.attrs({
-	className: "border-none	w-72 flex text-sm text-gray-800	p-3	",
-})`
-	font: normal normal normal 16px/32px Helvetica Neue;
-	max-height: 80%;
-	/*width: 18.6rem;
+export const StyledInput = styled.input`
+	/* width: 18.6rem; */
 	border: none;
 	display: flex;
 	font-size: 14px;
 	color: #393939;
-	padding: 0.75rem;*/
-	::-webkit-outer-spin-button,
+	padding: 0.75rem;
+	*/ ::-webkit-outer-spin-button,
 	::-webkit-inner-spin-button {
 		-webkit-appearance: none;
 		margin: 0;
